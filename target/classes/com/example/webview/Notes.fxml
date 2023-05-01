@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.legacy.MFXLegacyListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.webview.Controller">
+   <children>
+      <MFXLegacyListView prefHeight="501.0" prefWidth="75.0" style="-fx-background-radius: 20;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="31.0" layoutX="-6.0" layoutY="470.0" stroke="WHITE" strokeType="INSIDE" width="57.0" AnchorPane.bottomAnchor="0.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="31.0" layoutX="21.0" layoutY="30.0" stroke="WHITE" strokeType="INSIDE" width="32.0" />
+      <Group layoutX="11.0" layoutY="23.0">
+         <children>
+            <ImageView fitHeight="48.0" fitWidth="38.0" layoutX="8.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Home.png" />
+               </image>
+            </ImageView>
+            <MFXButton fx:id="home" onAction="#switchToDash" prefHeight="48.0" prefWidth="55.0" rippleAnimateBackground="false" style="-fx-opacity: 0;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </MFXButton>
+         </children>
+      </Group>
+      <Text layoutX="22.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home" />
+      <Group layoutX="11.0" layoutY="194.0">
+         <children>
+            <ImageView fitHeight="48.0" fitWidth="38.0" layoutX="8.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/Tutor.png" />
+               </image>
+            </ImageView>
+            <MFXButton prefHeight="48.0" prefWidth="55.0" rippleAnimateBackground="false" style="-fx-opacity: 0;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </MFXButton>
+         </children>
+      </Group>
+      <Text layoutX="12.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resouces" />
+      <Group layoutX="8.0" layoutY="379.0">
+         <children>
+            <ImageView fitHeight="48.0" fitWidth="38.0" layoutX="11.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assets/chat.png" />
+               </image>
+            </ImageView>
+            <MFXButton layoutX="3.0" prefHeight="48.0" prefWidth="55.0" rippleAnimateBackground="false" style="-fx-opacity: 0;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </MFXButton>
+         </children>
+      </Group>
+      <Text layoutX="10.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Messaging" />
+      <Text layoutX="90.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group of subjects">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Text layoutX="91.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject List">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <MFXButton buttonType="RAISED" depthLevel="LEVEL1" layoutX="275.0" layoutY="180.0" prefHeight="26.0" prefWidth="153.0" text="CSE 2213 (Demo)">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </MFXButton>
+      <MFXButton buttonType="RAISED" depthLevel="LEVEL1" layoutX="275.0" layoutY="222.0" prefHeight="26.0" prefWidth="153.0" text="MATH 1151 (Demo)">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </MFXButton>
+      <MFXButton buttonType="RAISED" depthLevel="LEVEL1" layoutX="275.0" layoutY="264.0" prefHeight="26.0" prefWidth="153.0" text="Math 2181">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </MFXButton>
+      <MFXButton buttonType="RAISED" depthLevel="LEVEL1" layoutX="275.0" layoutY="310.0" prefHeight="26.0" prefWidth="153.0" text="Math 2201 (Demo)">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </MFXButton>
+      <MFXButton buttonType="RAISED" depthLevel="LEVEL1" layoutX="452.0" layoutY="180.0" prefHeight="26.0" prefWidth="153.0" text="English 1011 (Demo)">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </MFXButton>
+      <MFXButton buttonType="RAISED" depthLevel="LEVEL1" layoutX="452.0" layoutY="222.0" prefHeight="26.0" prefWidth="153.0" text="English 1013 (Demo)">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </MFXButton>
+      <MFXButton buttonType="RAISED" depthLevel="LEVEL1" layoutX="452.0" layoutY="264.0" prefHeight="26.0" prefWidth="153.0" text=" BIO 3105">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </MFXButton>
+      <MFXButton buttonType="RAISED" depthLevel="LEVEL1" layoutX="452.0" layoutY="310.0" prefHeight="26.0" prefWidth="153.0" text="PHY 2105">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </MFXButton>
+      <MFXButton buttonType="RAISED" depthLevel="LEVEL1" layoutX="99.0" layoutY="180.0" prefHeight="26.0" prefWidth="153.0" text="ICS (Demo)">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </MFXButton>
+      <MFXButton buttonType="RAISED" depthLevel="LEVEL1" layoutX="99.0" layoutY="222.0" prefHeight="26.0" prefWidth="153.0" text="SPL (Demo)">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </MFXButton>
+      <MFXButton buttonType="RAISED" depthLevel="LEVEL1" layoutX="99.0" layoutY="264.0" onAction="#switchToWeb" prefHeight="26.0" prefWidth="153.0" text="OOP">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </MFXButton>
+      <MFXButton buttonType="RAISED" depthLevel="LEVEL1" layoutX="99.0" layoutY="310.0" prefHeight="26.0" prefWidth="153.0" text="AOP">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </MFXButton>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

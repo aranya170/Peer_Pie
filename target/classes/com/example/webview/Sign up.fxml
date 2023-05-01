@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXPasswordField?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import io.github.palexdev.materialfx.controls.legacy.MFXLegacyListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<!--<?import com.gluonhq.charm.glisten.control.TextField?>-->
+
+<AnchorPane fx:id="signUp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#signUp" onInputMethodTextChanged="#signUp" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #1E2633;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.webview.SignInController">
+    <children>
+      <MFXLegacyListView layoutX="729.0" layoutY="86.0" prefHeight="568.0" prefWidth="466.0" style="-fx-background-radius: 30; -fx-background-color: #273041;" />
+      <Text fill="#ff5722" layoutX="823.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Peer Pie">
+         <font>
+            <Font name="System Bold" size="72.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="120.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connecting learners, expanding horizons" textAlignment="CENTER" wrappingWidth="478.49609375">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="218.0" fitWidth="194.0" layoutX="270.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Assets/logo-no-background.png" />
+         </image>
+      </ImageView>
+      <MFXTextField fx:id="firstNameField" floatMode="BORDER" floatingText="First name" layoutX="793.0" layoutY="311.0" onAction="#signUp" prefHeight="38.0" prefWidth="180.0" />
+      <MFXTextField fx:id="lastNameField" floatMode="BORDER" floatingText="Last name" layoutX="985.0" layoutY="311.0" onAction="#signUp" prefHeight="38.0" prefWidth="145.0" />
+      <MFXTextField fx:id="UniID" floatMode="BORDER" floatingText="University ID" layoutX="792.0" layoutY="367.0" onAction="#signUp" prefHeight="38.0" prefWidth="339.0" />
+      <MFXTextField fx:id="emailField" floatMode="BORDER" floatingText="E-mail" layoutX="792.0" layoutY="423.0" onAction="#signUp" prefHeight="38.0" prefWidth="339.0" />
+      <MFXPasswordField fx:id="passwordField" floatMode="BORDER" floatingText="Password" layoutX="792.0" layoutY="477.0" prefHeight="38.0" prefWidth="338.0" />
+      <MFXButton fx:id="signUpBtn" buttonType="RAISED" layoutX="792.0" layoutY="533.0" onAction="#signUp" onInputMethodTextChanged="#switchToDash" text="Create Account">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </MFXButton>
+    </children>
+</AnchorPane>
